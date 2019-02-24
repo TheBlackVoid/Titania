@@ -54,8 +54,6 @@ body{
     padding: 1em 1.2em;
   }
 
-
-
 .hide-mobile{
     visibility: hidden;
     right: -400px;
@@ -77,7 +75,7 @@ header{
         width: 2em;
         z-index: 50000;
         padding-top: 2%;
-        
+        transition: $transition;
     }
 
     #menu{
@@ -136,6 +134,7 @@ header{
         width: 100%;
       }
       
+
 
       main{
         margin-top: 50%;
@@ -290,8 +289,22 @@ header{
       }
 
       @media only screen and (min-width: 1280px) {
-        .container{
-          padding: 1.5em 2em;
+
+
+        .container.container-scrolled{
+        #logo{
+         margin-top: -0.5%;
+        }
+          
+          ul{
+            padding-top: 1em;
+          }
+        }
+
+        header#header.header-scrolled{
+          background: color(dark-lighter-50);
+          width: 100%;
+          height: 9.5%;
         }
         
         .hide-mobile{
@@ -362,9 +375,15 @@ header{
 
 @media only screen and (min-width: 1680px){
 
+  
+
+  .container.container-scrolled{
+    padding: 1em 1.2em;
+  }
+
   header{
     #logo{
-      padding-top: 0.4%;
+      padding-top: 1%;
       width: 2.5em;
     }
   }

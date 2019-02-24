@@ -1,13 +1,16 @@
 
 const header = document.querySelector('header');
+const container = document.querySelector('.container');
 
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset; {
 
         if (currentScrollPos > 100) {
             header.classList.add('header-scrolled');
+            container.classList.add('container-scrolled');
         } else{
             header.classList.remove('header-scrolled');
+            container.classList.remove('container-scrolled');
         }
     }
 }
