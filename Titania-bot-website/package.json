@@ -1,0 +1,15 @@
+{
+  "name": "titania-discord.js-bot-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.0.1",
+    "midnight.js": "^1.1.1"
+  }
+}
