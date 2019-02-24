@@ -375,6 +375,8 @@ header{
 
 @media only screen and (min-width: 1680px){
 
+
+  
   
 
   .container.container-scrolled{
@@ -386,17 +388,18 @@ header{
       padding-top: 1%;
       width: 2.5em;
     }
-  }
+
 
     nav{
       ul{
         margin-right: -40%;
 
         a{
-          font-size: 1.4em;
+          font-size: 1.2em;
         }
       }
     }
+  }
 
     main{
       img{
@@ -411,12 +414,32 @@ header{
         font-size: 1.5em;
       }
     }
-    
+
 
 
     #star-about{
       margin-top: 12%;
       background: url(../image/bg/star_grid.svg);
+
+      h1{
+        text-align: center;
+        padding-top: 5%;
+        font-size: 4em;
+      }
+
+      #container-commands{
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 3%;
+      }
+
+      #command-container-left{
+        margin-right: -20%;
+      }
+
+      #command-container-right{
+        margin-left: -20%;
+      }
 
       p{
         padding-top: 2%;
@@ -425,6 +448,9 @@ header{
       #list-about{
         display: flex;
         justify-content: center;
+        margin-top: -5%;
+
+
 
         img{
           position: relative;

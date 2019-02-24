@@ -333,11 +333,11 @@ main a {
     padding-top: 1%;
     width: 2.5em;
   }
-  nav ul {
+  header nav ul {
     margin-right: -40%;
   }
-  nav ul a {
-    font-size: 1.4em;
+  header nav ul a {
+    font-size: 1.2em;
   }
   main img {
     width: 20em;
@@ -352,6 +352,26 @@ main a {
     margin-top: 12%;
     background: url(../image/bg/star_grid.svg);
   }
+  #star-about h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 4em;
+  }
+  #star-about #container-commands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-left: 3%;
+  }
+  #star-about #command-container-left {
+    margin-right: -20%;
+  }
+  #star-about #command-container-right {
+    margin-left: -20%;
+  }
   #star-about p {
     padding-top: 2%;
   }
@@ -362,6 +382,7 @@ main a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: -5%;
   }
   #star-about #list-about img {
     position: relative;
