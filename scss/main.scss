@@ -5,6 +5,7 @@ $colors: (
   dark-lighter: #292f36,
   dark-lighter-50: #292f36a8,
   green-light: #64d883,
+  green-light-50: #64d883af,
   red-light: #d62626,
   purple: #AD89EC,
   purple-50: rgba(173, 137, 236, 0.698)
@@ -180,12 +181,15 @@ header{
         width: 100%;
         background: url(../image/bg/mobile/star_grid-mobile.svg);
         background-size: cover;
-        margin-top: 60%;
+        margin-top: 65%;
+        
 
         h1{
-          font-size: 3em;
+          font-size: 2.5em;
           font-weight: bold;
           text-transform: uppercase;
+          text-align: center;
+          margin-top: 5em;
         }
 
         p{
@@ -198,15 +202,28 @@ header{
           color: color(red-light);
         }
 
+        #command-container-middle, #command-container-right{
+          visibility: hidden;
+        }
+
+
         #click-me{
           font-size:0.7em;
         }
 
+        
+
         img{
           width: 1.2em;
+          position: relative;
+          top: -45em;
+          left: calc(50% - 10px);
         }
 
         button{
+          position: relative;
+          top: -34em;
+          left: .45em;
           background: color(green-light);
           border-width: 0;
           font-size: 1.2em;
@@ -217,7 +234,6 @@ header{
            padding-right: 3em;
            border-radius: 2em;
            text-transform: uppercase;
-           margin-top: 10%;
            z-index: 1;
            cursor: pointer;
         }
@@ -368,6 +384,7 @@ header{
 
           a:hover{
             background: color(purple-50);
+            font-size: 1.7em;
           }
         }
 
@@ -450,12 +467,18 @@ header{
         justify-content: center;
         margin-top: -5%;
 
+        #read-more-btn{
+          transition: $transition;
+        }
 
-
+        #read-more-btn:hover{
+          background: color(green-light-50);
+        }
+        
         img{
           position: relative;
           left: 8.5%;
-        }
+        } 
         
       }
     }
