@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+body {
+  background: url(/star_grid.72a1eb3b.svg), #1B1C27;
+  background-position-y: -2em;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  width: 2em;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, li, button {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  background: none;
+}
+
+.btn {
+  box-sizing: border-box;
+  background: #67D283;
+  padding: 0.7em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-left: 2em;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  width: 7em;
+  font-size: 1.0833333333em;
+  margin-top: 1%;
+}
+.btn img {
+  width: 6em;
+  margin-top: 4%;
+}
+
+.hollow {
+  background: none;
+  border: solid #67D283;
+}
+
+header .container {
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .btn {
+  margin-left: 1em;
+  width: 8em;
+}
+header #logo-header {
+  width: 7em;
+  justify-content: start;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 0em 1em;
+}
+header nav ul .nav-item {
+  margin-top: 2.2%;
+  font-size: 1.0833333333em;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+main div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5em 20em;
+}
+main div #avatar {
+  width: 26em;
+  margin-top: 0%;
+  margin-left: 5%;
+}
+main div .btn {
+  height: 3em;
+  justify-content: flex-end;
+}
+main div .full {
+  background: #FF4464;
+}
+main div .hollow {
+  border-color: #FF4464;
+}
+main div span {
+  color: #FF4464;
+}
+main div h1 {
+  font-size: 9em;
+  margin-top: -1%;
+  line-height: 100%;
+  font-weight: normal;
+}
+main #container-btn {
+  margin-top: -8%;
+  margin-right: 7%;
+  display: flex;
+  justify-content: end;
+}
+main #container-btn .btn {
+  width: 10em;
+  margin-left: 1em;
+}
+main #read {
+  width: 8em;
+  margin-left: 53%;
+}
+main #indicator-container {
+  display: flex;
+  margin-top: -5%;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
