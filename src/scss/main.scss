@@ -54,6 +54,9 @@ p, h1, h2, h3, h4 ,h5 ,h6, a, li, button{
     width: 7em;
     font-size: 1.0833333333333335em;
     margin-top: 1%;
+    transition: 0.7s;
+    cursor: pointer;
+
     img{
         width: 6em;
         margin-top: 4%;
@@ -77,6 +80,15 @@ header{
         margin-left: 1em;
         width: 8em;
     }
+
+    .hollow:hover{
+        border: solid  color(main-red);
+    }
+
+    .full:hover{
+        background: color(main-red);
+    }
+
 
   #logo-header{
         width: 7em;
@@ -117,15 +129,25 @@ main{
 
     .btn{
         height: 3em;
-        justify-content: flex-end;
+        justify-content: flex-end;   
     }
+
 
     .full{
         background: color(main-red);
+        font-weight: medium;
+    }
+
+    .full:hover{
+        background: color(main-green);
     }
 
     .hollow{
         border-color: color(main-red);
+    }
+
+    .hollow:hover{
+        border-color: color(main-green);
     }
 
     span{
@@ -163,4 +185,88 @@ main{
     }
 
     
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+   
+
+   .section-container{
+        width: 80%;
+        height: 90vh;
+        border-style: solid;
+        border-color: #fff;
+        border-width: 0.1em;
+        border-left: 0;
+        border-right: 0;
+       margin-left: 8%;
+        padding: 0 12em;
+    }
+
+    .full{
+        background: color(main-red);
+     }
+
+    .full:hover{
+        background: color(main-green);
+    }
+
+    .hollow:hover{
+        border-color: color(main-red);
+    }
+    #section-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about-logo{
+        width: 25em;
+        margin-top: -10%;
+    }
+
+    #gif-use{
+        margin-top: 10%;
+         height: 40em;
+         width: auto;
+        border-radius: 1em;
+        border-style: solid;
+        border-color: color(main-green);
+        border-width: 0.5px;
+        box-shadow: 0 0 0.4em color(main-green);
+    }
+
+    h1{
+        font-size: 3em;
+        font-weight: normal;
+        width: 50%;
+        text-align: center;
+        justify-content: start;
+        margin-top: 45%;
+        margin-left: -55%;
+    }
+
+    #section-btn-container{
+        margin-top: -4%;
+        display: flex;
+        justify-content:start;
+        margin-left: 4%;
+    
+
+        .btn{
+            width: 8em;
+            height: 2.7em;
+            margin-left: 0.5em;
+
+            img{
+                width: 4em;
+            }
+        }
+
+
+    }
+
+    span{
+        color: color(main-green);
+    }
 }

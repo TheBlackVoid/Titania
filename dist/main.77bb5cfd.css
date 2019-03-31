@@ -41,6 +41,8 @@ p, h1, h2, h3, h4, h5, h6, a, li, button {
   width: 7em;
   font-size: 1.0833333333em;
   margin-top: 1%;
+  transition: 0.7s;
+  cursor: pointer;
 }
 .btn img {
   width: 6em;
@@ -60,6 +62,12 @@ header .container {
 header .btn {
   margin-left: 1em;
   width: 8em;
+}
+header .hollow:hover {
+  border: solid #FF4464;
+}
+header .full:hover {
+  background: #FF4464;
 }
 header #logo-header {
   width: 7em;
@@ -96,9 +104,16 @@ main div .btn {
 }
 main div .full {
   background: #FF4464;
+  font-weight: medium;
+}
+main div .full:hover {
+  background: #67D283;
 }
 main div .hollow {
   border-color: #FF4464;
+}
+main div .hollow:hover {
+  border-color: #67D283;
 }
 main div span {
   color: #FF4464;
@@ -127,6 +142,75 @@ main #indicator-container {
   display: flex;
   margin-top: -5%;
   justify-content: center;
+}
+
+#about {
+  width: 100vw;
+  height: 100vh;
+}
+#about .section-container {
+  width: 80%;
+  height: 90vh;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0.1em;
+  border-left: 0;
+  border-right: 0;
+  margin-left: 8%;
+  padding: 0 12em;
+}
+#about .full {
+  background: #FF4464;
+}
+#about .full:hover {
+  background: #67D283;
+}
+#about .hollow:hover {
+  border-color: #FF4464;
+}
+#about #section-content {
+  display: flex;
+  justify-content: space-between;
+}
+#about #about-logo {
+  width: 25em;
+  margin-top: -10%;
+}
+#about #gif-use {
+  margin-top: 10%;
+  height: 40em;
+  width: auto;
+  border-radius: 1em;
+  border-style: solid;
+  border-color: #67D283;
+  border-width: 0.5px;
+  box-shadow: 0 0 0.4em #67D283;
+}
+#about h1 {
+  font-size: 3em;
+  font-weight: normal;
+  width: 50%;
+  text-align: center;
+  justify-content: start;
+  margin-top: 45%;
+  margin-left: -55%;
+}
+#about #section-btn-container {
+  margin-top: -4%;
+  display: flex;
+  justify-content: start;
+  margin-left: 4%;
+}
+#about #section-btn-container .btn {
+  width: 8em;
+  height: 2.7em;
+  margin-left: 0.5em;
+}
+#about #section-btn-container .btn img {
+  width: 4em;
+}
+#about span {
+  color: #67D283;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
