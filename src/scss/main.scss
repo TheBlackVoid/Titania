@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+$colors: (
+   main-green: #67D283,
+   main-red: #FF4464,
+   dark: #1B1C27,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+body{
+    background: url(../image/bg/star_grid.svg), color(dark);
+    background-position-y: -2em;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img{
+    width: 2em;
+}
+
+p, h1, h2, h3, h4 ,h5 ,h6, a, li, button{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    background: none;
+}
+
+.btn{
+    box-sizing: border-box;
+    background: color(main-green);
+    padding: 0.7em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-left: 2em;
+    border-radius: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    width: 7em;
+    font-size: 1.0833333333333335em;
+    margin-top: 1%;
+    transition: 0.7s;
+    cursor: pointer;
+
+    img{
+        width: 6em;
+        margin-top: 4%;
+    }
+}
+
+.hollow{
+    background: none;
+    border: solid color(main-green);
+}
+
+header{
+
+    .container{
+        padding: 2rem 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn{
+        margin-left: 1em;
+        width: 8em;
+    }
+
+    .hollow:hover{
+        border: solid  color(main-red);
+    }
+
+    .full:hover{
+        background: color(main-red);
+    }
+
+
+  #logo-header{
+        width: 7em;
+        justify-content: start;
+    }
+
+    nav{
+        ul{
+            display: flex;
+
+            
+            li{
+                padding: 0em 1em;
+
+            }
+            .nav-item{
+                margin-top: 2.2%;
+                font-size: 1.0833333333333335em; 
+            }
+        }
+    }
+
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    div{
+        display: flex;
+        justify-content: space-between;
+        padding: 5em 20em;
+
+    #avatar{
+        width: 26em;
+        margin-top: 0%;
+        margin-left: 5%;
+    }
+
+    .btn{
+        height: 3em;
+        justify-content: flex-end;   
+    }
+
+
+    .full{
+        background: color(main-red);
+        font-weight: medium;
+    }
+
+    .full:hover{
+        background: color(main-green);
+    }
+
+    .hollow{
+        border-color: color(main-red);
+    }
+
+    .hollow:hover{
+        border-color: color(main-green);
+    }
+
+    span{
+        color: color(main-red);
+    }
+    
+    h1{
+        font-size: 9em;
+        margin-top: -1%;
+        line-height: 100%;
+        font-weight: normal;
+    }
+}
+    #container-btn{
+        margin-top: -8%;
+        margin-right: 7%;
+        display: flex;
+        justify-content: end;
+
+        .btn{
+            width: 10em;
+            margin-left: 1em;
+        }
+    }
+
+    #read{
+        width: 8em;
+        margin-left: 53%;
+    }
+
+    #indicator-container{
+        display: flex;
+        margin-top: -5%;
+        justify-content: center;
+    }
+
+    
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+   
+
+   .section-container{
+        width: 80%;
+        height: 90vh;
+        border-style: solid;
+        border-color: #fff;
+        border-width: 0.1em;
+        border-left: 0;
+        border-right: 0;
+       margin-left: 8%;
+        padding: 0 12em;
+    }
+
+    .full{
+        background: color(main-red);
+     }
+
+    .full:hover{
+        background: color(main-green);
+    }
+
+    .hollow:hover{
+        border-color: color(main-red);
+    }
+    #section-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about-logo{
+        width: 25em;
+        margin-top: -10%;
+    }
+
+    #gif-use{
+        margin-top: 10%;
+         height: 40em;
+         width: auto;
+        border-radius: 1em;
+        border-style: solid;
+        border-color: color(main-green);
+        border-width: 0.5px;
+        box-shadow: 0 0 0.4em color(main-green);
+    }
+
+    h1{
+        font-size: 3em;
+        font-weight: normal;
+        width: 50%;
+        text-align: center;
+        justify-content: start;
+        margin-top: 45%;
+        margin-left: -55%;
+    }
+
+    #section-btn-container{
+        margin-top: -4%;
+        display: flex;
+        justify-content:start;
+        margin-left: 4%;
+    
+
+        .btn{
+            width: 8em;
+            height: 2.7em;
+            margin-left: 0.5em;
+
+            img{
+                width: 4em;
+            }
+        }
+
+
+    }
+
+    span{
+        color: color(main-green);
+    }
+}
