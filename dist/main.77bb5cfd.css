@@ -91,7 +91,7 @@ main {
 main div {
   display: flex;
   justify-content: space-between;
-  padding: 5em 20em;
+  padding: 5% 14%;
 }
 main div #avatar {
   width: 26em;
