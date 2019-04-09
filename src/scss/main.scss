@@ -104,6 +104,20 @@ header{
                 padding: 0em 1em;
 
             }
+
+            a{
+                transition: 0.4s ease;
+            }
+
+
+            a:hover{
+                color: color(main-green);
+            }
+
+            #invite-header:hover{
+                color: #fff;
+            }
+
             .nav-item{
                 margin-top: 2.2%;
                 font-size: 1.0833333333333335em; 

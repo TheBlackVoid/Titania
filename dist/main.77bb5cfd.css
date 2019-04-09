@@ -79,6 +79,15 @@ header nav ul {
 header nav ul li {
   padding: 0em 1em;
 }
+header nav ul a {
+  transition: 0.4s ease;
+}
+header nav ul a:hover {
+  color: #67D283;
+}
+header nav ul #invite-header:hover {
+  color: #fff;
+}
 header nav ul .nav-item {
   margin-top: 2.2%;
   font-size: 1.0833333333em;
